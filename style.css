@@ -3,7 +3,7 @@
     margin: 0;
     font-family: 微軟正黑體;
     color: white;
-    border: 0px solid black;
+    border: 1px solid black;
     text-shadow: 0 3px 5px rgba(0, 0, 0, 10);
     font-weight: 900;
 }
@@ -33,7 +33,7 @@ html, body {
 }
 
 .logo a:hover {
-    background-color: black;
+
 }
 .logo a img {
     width: 100%;
