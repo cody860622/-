@@ -2,8 +2,8 @@
     padding: 0;
     margin: 0;
     font-family: 微軟正黑體;
-    color: white;
-    border: 1px solid black;
+    color: black;
+    border: 0px solid black;
     text-shadow: 0 3px 5px rgba(0, 0, 0, 10);
     font-weight: 900;
 }
@@ -14,11 +14,10 @@ html, body {
 /* 整體頁面 */
 .main {
     margin: 50px auto 0 auto;
-    width: 80%;
-    padding: 30px;
+    width: 100%;
     height: 100%;
 }
-/* LOGO */
+/* 起始畫面LOGO */
 
 .logo {
     text-align: center;
@@ -38,6 +37,38 @@ html, body {
 .logo a img {
     width: 100%;
 }
+
+/* 下滑頁面-1 */
+
+.shop {
+    text-align: left;
+    margin-top: 30px;
+}
+.shop a {
+    display: inline-block;
+    width: 350px;
+    padding: 30px;
+    margin-left: 0px;
+}
+.shop a img {
+    width: 130%;
+}
+/* 下滑頁面-2 */
+
+.coffee {
+    text-align: right;
+    margin-top: 30px;
+}
+.coffee a {
+    display: inline-block;
+    width: 350px;
+    padding: 30px;
+    margin-left: 0px;
+}
+.coffee a img {
+    width: 100%;
+}
+
 /* 頁尾 */
 .footer {
     text-align: center;
