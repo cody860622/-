@@ -4,78 +4,143 @@
     font-family: 微軟正黑體;
     color: black;
     border: 0px solid black;
-    text-shadow: 0 3px 5px rgba(0, 0, 0, 10);
     font-weight: 900;
 }
-html, body {
-    height: 100%;
-}
 
-/* 整體頁面 */
-.main {
-    margin: 50px auto 0 auto;
-    width: 100%;
-    height: 100%;
+/* 瀏覽頁 */
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-/* 起始畫面LOGO */
-
+ul.drop-down-menu{
+    border: #ccc 0px solid;
+    display: inline-block;
+    font-size: 13px;
+}
+ul.drop-down-menu li{
+    position: relative;
+    white-space: nowrap;
+    border-right: #ccc 1px solid;
+}
+ul.drop-down-menu > li:last-child{
+    border-right: none;    
+}
+ul.drop-down-menu > li {
+    float: left;
+}
+ul.drop-down-menu a {
+    background-color: #fff;
+    color: #333;
+    display: block;
+    padding: 0 30px;
+    text-decoration: none;
+    line-height: 40px;
+}
+ul.drop-down-menu a:hover {
+    background-color: #ef5c28;
+    color: #fff;
+}
+ul.drop-down-menu li:hover>a {
+    background-color: #ef5c28;
+    color: #fff;
+}
+ul.drop-down-menu ul {
+    border: #ccc 1px solid;
+    position: absolute;
+    z-index: 99;
+    left: -1px;
+    top: 100%;
+    min-width: 180px;
+}
+ul.drop-down-menu ul li{
+    border-bottom: 1px solid #ccc;
+}
+ul.drop-down-menu ul li:last-child {
+    border-bottom: none;
+}
+ul.drop-down-menu ul {
+    display: none;
+}
+ul.drop-down-menu li:hover> ul {
+    display: block;
+}
+/* 封面logo */
 .logo {
     text-align: center;
-    margin-top: 30px;
+    margin: 50px auto 0 auto;
+    width: 100%;
+    height: 800px;
 }
 .logo a {
+    text-align: left;
+    position:relative;
     display: inline-block;
     width: 350px;
-    border-radius: 50%;
-    padding: 30px;
+    padding: 0px;
     margin-left: 0px;
-}
-
-.logo a:hover {
-
 }
 .logo a img {
+    position:absolute;
     width: 100%;
 }
+.logo a img:last-child:hover{
+     opacity:0;
+}
 
-/* 下滑頁面-1 */
-
-.shop {
-    text-align: left;
-    margin-top: 30px;
-}
-.shop a {
-    display: inline-block;
-    width: 350px;
-    padding: 30px;
-    margin-left: 0px;
-}
-.shop a img {
-    width: 130%;
-}
-/* 下滑頁面-2 */
-
-.coffee {
-    text-align: right;
-    margin-top: 30px;
-}
-.coffee a {
-    display: inline-block;
-    width: 350px;
-    padding: 30px;
-    margin-left: 0px;
-}
-.coffee a img {
+/* 下滑頁面 */
+.main-1 {
+    background-image: url(shop-2.jpg);
+    background-size: cover;
     width: 100%;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 0px 0px;
 }
-
-/* 頁尾 */
-.footer {
+.box-1 {
+    margin: 0px 0px;
+    background-image: url(shop.jpg);
+    background-size: cover;
+}
+.content-1 {
+    margin: 100px 0px;
     text-align: center;
-    height: 50px;
+}
+.main-2 {
+    background-image: url(shop-2.jpg);
+    background-size: cover;
+    margin: 100px 0px;
     width: 100%;
-    line-height: 50px;
-    position: fixed;
-    bottom: 0;
-} 
-
+    height: 700px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 0px 0px;
+}
+.box-2 {
+    margin: 0px 0px;
+    background-image: url(coffee.jpg);
+    background-size: cover;
+}
+.content-2 {
+    margin: 100px 0px;
+    text-align: center;
+}
+.main-3 {
+    background-image: url(shop-2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 0px 0px;
+}
+.box-3 {
+    margin: 0px 0px;
+    background-image: url(dessert.jpg);
+    background-size: cover;
+}
+.content-3 {
+    margin: 100px 0px;
+    text-align: center;
+}

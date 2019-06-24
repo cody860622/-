@@ -1,45 +1,68 @@
 <!DOCTYPE html>
 <html lang="zh">
-<head>
-    <meta charset="UTF-8">
-    <title>咖啡廳</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- 起始畫面 -->
-    <div class="main">
-
+    <head>
+        <meta charset="UTF-8">
+        <title>咖啡廳</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- 瀏覽頁 -->
         <div class="nav">
-            <div class="logo">
-                <a href=""><img src="cafe-logo.png" alt="logo"></a>
-            </div>
+            <ul class="drop-down-menu">
+                <li><a href="">關於</a></li>
+                <li><a href="">菜單</a>
+                    <ul>
+                        <li><a href="">咖啡</a></li>
+                        <li><a href="">甜點</a></li>
+                        <li><a href="">鹹食</a></li>
+                    </ul>
+                </li>
+                <li><a href="">門市</a>
+                    <ul>
+                        <li><a href="">北部</a></li>
+                        <li><a href="">中部</a></li>
+                        <li><a href="">南部</a></li>
+                    </ul>
+                </li>
+                <li><a href="">聯絡</a></li>
+            </ul>
         </div>
 
-    </div>
-    <!-- 下滑頁面-1 -->
-    <div class="main">
-
-            <div class="nav">
-                <div class="shop">
-                    <a href=""><img src="shop.jpg" alt="shop"></a>
-                </div>
+        <!-- 封面logo -->
+        <div class="logo">
+            <a href="">
+            <img src="logo-2.png" alt="logo">
+            <img src="logo.png" alt="logo">
+            </a>
+        </div>
+        <!-- 下滑頁面-1 -->
+        <div class="main-1">
+            <div class="box-1"></div>
+            <div class="content-1">
+                <h1>舒適的環境</h1>
+                <p></p>
             </div>
-    
-    </div>
-    <!-- 下滑頁面-2 -->
-    <div class="main">
-
-            <div class="nav">
-                <div class="coffee">
-                    <a href=""><img src="coffee.jpg" alt="coffee"></a>
-                </div>
+        </div>
+        <!-- 下滑頁面-2 -->
+        <div class="main-2">
+            <div class="content-2">
+                <h1>精選的咖啡</h1>
+                <p></p>
             </div>
-    
-    </div>
-
-    <!-- 頁尾 -->
-   <div class="footer">
-       cafe &copy; 2019
-   </div>
-</body>
-</html>
+            <div class="box-2"></div>
+        </div>
+        <!-- 下滑頁面-3 -->
+        <div class="main-3">
+            <div class="box-3"></div>
+            <div class="content-3">
+                <h1>美味的食物</h1>
+            </div>
+        </div>
+        <footer>
+            <div class="smallBox">
+                <a href="#"><img src="icon-fb.png" alt="facebook"/></a><a href="#"><img src="icon-ig.png" alt="instagram"/></a><a href="#"><img src="icon-yt.png" alt="youtube"/></a>
+            </div>
+            <hr/>
+            <div class="copyright">TUNA &copy; 2019</div>
+        </footer>
+    </body>
