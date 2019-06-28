@@ -9,7 +9,7 @@
 
 /* 瀏覽頁 */
 ul{
-    margin: 0;
+    margin: 0 0 0 33%;
     padding: 0;
     list-style: none;
 }
@@ -38,11 +38,11 @@ ul.drop-down-menu a {
     line-height: 40px;
 }
 ul.drop-down-menu a:hover {
-    background-color: #ef5c28;
+    background-color: black;
     color: #fff;
 }
 ul.drop-down-menu li:hover>a {
-    background-color: #ef5c28;
+    background-color: #40a3ff;
     color: #fff;
 }
 ul.drop-down-menu ul {
@@ -89,11 +89,33 @@ ul.drop-down-menu li:hover> ul {
 }
 
 /* 下滑頁面 */
+h1 {
+    font-size: 50px;
+}
+p {
+    font-size: 20px;
+    margin: 15px 0;
+}
+.button {
+    margin: 20px 0;
+    display: inline-block;
+    border: 3px solid black;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+.button:hover {
+    color:white;
+    background-color: #000000;
+}
 .main-1 {
     background-image: url(shop-2.jpg);
     background-size: cover;
     width: 100%;
-    height: 700px;
+    height: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-gap: 0px 0px;
@@ -104,15 +126,16 @@ ul.drop-down-menu li:hover> ul {
     background-size: cover;
 }
 .content-1 {
-    margin: 100px 0px;
+    margin: 150px 0px;
     text-align: center;
 }
+
 .main-2 {
-    background-image: url(shop-2.jpg);
+    background-image: url(bean.jpg);
     background-size: cover;
     margin: 100px 0px;
     width: 100%;
-    height: 700px;
+    height: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-gap: 0px 0px;
@@ -123,14 +146,14 @@ ul.drop-down-menu li:hover> ul {
     background-size: cover;
 }
 .content-2 {
-    margin: 100px 0px;
+    margin: 120px 0px;
     text-align: center;
 }
 .main-3 {
-    background-image: url(shop-2.jpg);
+    background-image: url(sandwitch.jpg);
     background-size: cover;
     width: 100%;
-    height: 700px;
+    height: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-gap: 0px 0px;
@@ -141,6 +164,37 @@ ul.drop-down-menu li:hover> ul {
     background-size: cover;
 }
 .content-3 {
-    margin: 100px 0px;
+    margin: 150px 0px;
     text-align: center;
+}
+
+/* 頁尾 */
+footer {
+    background-color: black;
+    color: white;
+    height: 200px;
+}
+footer .smallBox {
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+footer .smallBox  {
+    text-align: center;
+    color: #eee;
+}
+footer .smallBox img {
+    width: 20px;
+    margin: 0 20px;
+}
+footer hr {
+    background-color: #ddd;
+    height: 1px;
+    width: 80%;
+    margin: 0 auto;
+}
+footer .copyright {
+    color: #ddd;
+    text-align: center;
+    padding-top: 50px;
 }
