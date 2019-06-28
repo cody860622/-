@@ -19,6 +19,7 @@ ul.drop-down-menu{
     font-size: 13px;
 }
 ul.drop-down-menu li{
+    text-align: center;
     position: relative;
     white-space: nowrap;
     border-right: #ccc 1px solid;
@@ -197,4 +198,31 @@ footer .copyright {
     color: #ddd;
     text-align: center;
     padding-top: 50px;
+}
+
+/* ABOUT */
+
+.home {
+    position:relative;
+    width: 50px;
+    padding: 0px;
+    margin-left: 0px;
+    text-decoration: none;
+}
+.home img:last-child:hover{
+    opacity:0;
+}
+.home img {
+    position:absolute;
+    width: 250px;
+}
+.about {
+    text-align: center;
+    margin-top: 100px;
+}
+.about h1 {
+    font-size: 80px;
+}
+.about img {
+    width: 100px;
 }
