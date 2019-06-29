@@ -8,15 +8,19 @@
 }
 
 /* 瀏覽頁 */
+.nav {
+    width: 100%;
+    position: relative;
+    display: -webkit-box;
+}
 ul{
-    margin: 0 0 0 33%;
     padding: 0;
     list-style: none;
 }
 ul.drop-down-menu{
     border: #ccc 0px solid;
-    display: inline-block;
     font-size: 13px;
+    margin: 0 auto;
 }
 ul.drop-down-menu li{
     text-align: center;
@@ -69,9 +73,9 @@ ul.drop-down-menu li:hover> ul {
 /* 封面logo */
 .logo {
     text-align: center;
-    margin: 50px auto 0 auto;
+    margin: 10% auto;
     width: 100%;
-    height: 800px;
+    height: 500px;
 }
 .logo a {
     text-align: left;
@@ -216,13 +220,38 @@ footer .copyright {
     position:absolute;
     width: 250px;
 }
-.about {
-    text-align: center;
-    margin-top: 100px;
+
+.about-1 {
+    margin-top: 250px;
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-gap: 0px 0px;
 }
-.about h1 {
-    font-size: 80px;
+.about-1 .box {
+    margin: 0px 50px;
+    background-image: url(barista.jpg);
+    background-size: cover;
 }
-.about img {
-    width: 100px;
+.about-1 .content {
+    margin: 0px 0px;
+    text-align: left;
+}
+.about-2 {
+    margin-top: 250px;
+    width: 100%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-gap: 0px 0px;
+}
+.about-2 .box-1 {
+    margin: 0px 50px;
+    background-image: url(barista.jpg);
+    background-size: cover;
+}
+.about-2 .content-1 {
+    margin: 0px 0px;
+    text-align: left;
 }
