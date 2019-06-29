@@ -292,7 +292,7 @@ footer .copyright {
     height: 600px;
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 10px
+    grid-gap: 10px;
 }
 .menu-1 {
     display: grid;
@@ -325,7 +325,8 @@ footer .copyright {
     transition: opacity 1s ease-in-out;
     opacity:0.3;
   }
-  
+
+
   /* coffee */
 
   .menu-coffee {
@@ -341,6 +342,7 @@ footer .copyright {
     color: white;
     padding: 10px;
     text-align: center;
+
   }
 
    /* dessert */
@@ -374,3 +376,34 @@ footer .copyright {
     padding: 10px;
     text-align: center;
   }
+
+  /* contact */
+
+.contact {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 80%;
+    margin: 150px 0 150px auto;
+    color: #555;
+}
+.contact form {
+    padding: 0 30px;
+}
+.contact form label, .contact form input, .contact form textarea {
+    width: 100%;
+}
+.contact form label, .contact .contactMessage h3 {
+    display: inline-block;
+    margin: 10px 0;
+    font-size: 20px;
+}
+.contact form input, .contact form textarea {
+    border: 0.5px solid #ccc;
+    border-radius: 10px;
+}
+.contact form input, .contact .contactMessage p {
+    height: 50px;
+}
+.contact form input[type="submit"] {
+    margin-top: 30px;
+}
