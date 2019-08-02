@@ -5,9 +5,56 @@
     color: black;
     border: 0px solid black;
     font-weight: 900;
+
 }
 
 /* 瀏覽頁 */
+.home {
+    position:relative;
+    width: 50px;
+    padding: 0px;
+    margin-left: 0px;
+    text-decoration: none;
+}
+.home img:last-child:hover{
+    opacity:0;
+}
+.home img {
+    position:absolute;
+    width: 150px;
+}
+.toTop-arrow {
+	width: 2.5rem;
+	height: 2.5rem;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	border-radius: 33%;
+	opacity: 0.6;
+	background: #000;
+	cursor: pointer;
+	position:fixed;
+	right: 1rem;
+	bottom: 1rem;
+	display: none;
+}
+.toTop-arrow::before, .toTop-arrow::after {
+	width: 18px;
+	height: 5px;
+	border-radius: 3px;
+	background: rgb(107, 219, 253);
+	position: absolute;
+	content: "";
+}
+.toTop-arrow::before {
+	transform: rotate(-45deg) translate(0, -50%);
+	left: 0.5rem;
+}
+.toTop-arrow::after {
+	transform: rotate(45deg) translate(0, -50%);
+	right: 0.5rem;
+}
+.toTop-arrow:focus {outline: none;}
 .nav {
     width: 100%;
     position: relative;
@@ -71,11 +118,14 @@ ul.drop-down-menu li:hover> ul {
     display: block;
 }
 /* 封面logo */
+h1 {
+    font-family: 'Anton', sans-serif;
+}
 .logo {
-    background-image: url(shop-2.jpg);
-    background-size: cover;
+    background-image: url(cafe.png);
+    background-size: contain;
     text-align: center;
-    margin: 7% auto;
+    margin: 5% auto;
     width: 100%;
     height: 500px;
 }
@@ -85,10 +135,10 @@ ul.drop-down-menu li:hover> ul {
     display: inline-block;
     width: 350px;
     padding: 0px;
-    margin:50px 0;
+    margin:10px 0;
 }
 .logo a img {
-    margin: 50px 0;
+    margin: 30px 0;
     position:absolute;
     width: 100%;
 }
@@ -120,8 +170,6 @@ p {
     background-color: #000000;
 }
 .main-1 {
-    background-image: url(shop-2.jpg);
-    background-size: cover;
     width: 100%;
     height: 100%;
     display: grid;
@@ -134,13 +182,16 @@ p {
     background-size: cover;
 }
 .content-1 {
-    margin: 150px 0px;
+    background-image: url(shop-2.jpg);
+    background-size: cover;
+}
+.content-1-2 {
+    margin: 120px 0px;
     text-align: center;
 }
 
 .main-2 {
-    background-image: url(bean.jpg);
-    background-size: cover;
+    
     margin: 100px 0px;
     width: 100%;
     height: 100%;
@@ -154,12 +205,15 @@ p {
     background-size: cover;
 }
 .content-2 {
+    background-image: url(bean.jpg);
+    background-size: cover;
+}
+.content-2-2 {
     margin: 120px 0px;
     text-align: center;
 }
 .main-3 {
-    background-image: url(sandwitch.jpg);
-    background-size: cover;
+    margin: 0 0 100px 0;
     width: 100%;
     height: 100%;
     display: grid;
@@ -168,10 +222,14 @@ p {
 }
 .box-3 {
     margin: 0px 0px;
-    background-image: url(dessert.jpg);
+    background-image: url(sandwitch.jpg);
     background-size: cover;
 }
 .content-3 {
+    background-image: url(dessert.jpg);
+    background-size: cover;
+}
+.content-3-2 {
     margin: 150px 0px;
     text-align: center;
 }
@@ -209,87 +267,51 @@ footer .copyright {
 
 /* ABOUT */
 
-.home {
-    position:relative;
-    width: 50px;
-    padding: 0px;
-    margin-left: 0px;
-    text-decoration: none;
+.me{
+    text-align: center;
+    margin: 50px 0 10px 0;
 }
-.home img:last-child:hover{
-    opacity:0;
+.me img{
+    max-height: 25%;
+    max-width: 25%;
 }
-.home img {
-    position:absolute;
-    width: 250px;
+h1{
+    text-align: center;
 }
-.about-1.button:hover {
-    color:white;
-    background-color: #000000;
-}
-.about-1 {
-    background-image: url(shop-2.jpg);
-    background-size: cover;
-    margin-top: 250px;
-    width: 100%;
-    height: 500px;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-gap: 0px 0px;
-}
-.about-1 .box {
-    margin: 0px 50px;
-    background-image: url(barista.jpg);
-    background-size: cover;
-}
-.about-1 .content {
-    margin: 0px 0px;
-    text-align: left;
-}
-.about-2 {
-    background-image: url(shop-2.jpg);
-    background-size: cover;
-    margin-top: 150px;
-    width: 100%;
-    height: 500px;
-    display: grid;
-    grid-template-columns: 70% 30%;
-    grid-gap: 0px 0px;
-}
-.about-2 .box {
-    margin: 0 50px 0px 0;
-    background-image: url(321.jpg);
-    background-size: cover;
-}
-.about-2 .content {
-    margin: 0px 50px;
-    text-align: right;
-}
-.about-3 {
-    background-image: url(shop-2.jpg);
-    background-size: cover;
-    margin: 250px 0;
-    width: 100%;
-    height: 500px;
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-gap: 0px 0px;
-}
-.about-3 .box {
-    margin: 0px 50px;
-    background-image: url(dream.jpg);
-    background-size: cover;
-}
-.about-3 .content {
-    margin: 0px 0px;
-    text-align: left;
+p{
+    text-align: center;
 }
 
+
 /* MENU */
-.menu {
-    margin: 100px auto;
+
+.logo-menu {
+    margin: 20px auto 0px auto;
     width: 50%;
-    height: 600px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.logo-coffee img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.logo-dessert img{
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+}
+.logo-sandwitch img{
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+}
+
+
+.menu {
+    margin: 0px auto 50px auto;
+    width: 50%;
+    height: 400px;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 10px;
@@ -329,53 +351,101 @@ footer .copyright {
 
   /* coffee */
 
-  .menu-coffee {
-    margin: 150px auto;
+.coffee-1 {
+    margin: 100px auto 0px auto;
     width: 50%;
-    height: 600px;
+    height: 80px;
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap:60px 30px; 
-  }
-  .menu-coffee div{
-    background-color: rgba(63, 35, 3, 0.801);
-    color: white;
-    padding: 10px;
-    text-align: center;
+    grid-template-columns: auto auto ;
+}
+#latte {
+    max-width: 100%;
+    max-height: 100%;
+    float: right;
+}
+.coffee-1 h1 {
+    text-align: left;
+}
+.coffee-1 p {
+    text-align: left;
+}
 
-  }
+
+.coffee-2 {
+    margin: 200px auto 0px auto;
+    width: 50%;
+    height: 80px;
+    display: grid;
+    grid-template-columns: auto auto ;
+}
+#cappu {
+    max-width: 100%;
+    max-height: 100%;
+    float: right;
+}
+.coffee-2 h1 {
+    text-align: left;
+}
+.coffee-2 p {
+    text-align: left;
+}
+
+.coffee-3 {
+    margin: 200px auto 0px auto;
+    width: 50%;
+    height: 80px;
+    display: grid;
+    grid-template-columns: auto auto ;
+}
+#mocha {
+    max-width: 100%;
+    max-height: 100%;
+    float: right;
+}
+.coffee-3 h1 {
+    text-align: left;
+}
+.coffee-3 p {
+    text-align: left;
+}
+
+.box {
+    width: 100%;
+    height: 200px;
+}
+
 
    /* dessert */
-  .menu-dessert {
+.menu-dessert {
     margin: 150px auto;
     width: 50%;
     height: 600px;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap:60px 30px; 
-  }
-  .menu-dessert div {
+}
+.menu-dessert div {
     background-color: rgba(250, 69, 69, 0.589);
     color: white;
     padding: 10px;
     text-align: center;
-  }
+}
 
    /* sandwitch */
-  .menu-sandwitch {
+.menu-sandwitch {
     margin: 150px auto;
     width: 50%;
     height: 600px;
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap:60px 30px; 
-  }
-  .menu-sandwitch div {
+}
+.menu-sandwitch div {
     background-color: rgb(255, 251, 0);
     color: white;
     padding: 10px;
     text-align: center;
-  }
+}
 
   /* contact */
 
@@ -383,7 +453,7 @@ footer .copyright {
     display: grid;
     grid-template-columns: 50% 50%;
     width: 80%;
-    margin: 150px 0 150px auto;
+    margin: 100px 0 150px auto;
     color: #555;
 }
 .contact form {
@@ -406,4 +476,7 @@ footer .copyright {
 }
 .contact form input[type="submit"] {
     margin-top: 30px;
+}
+.contactMessage p {
+    text-align: left;
 }

@@ -4,22 +4,40 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
         <title>TUNA COFFEE</title>
+        <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <!-- 瀏覽頁 -->
+        	
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <button type="button" id="BackTop" class="toTop-arrow"></button>
+        <script>
+            $(function(){
+	        $('#BackTop').click(function(){ 
+		    $('html,body').animate({scrollTop:0}, 1000);
+	        });
+	        $(window).scroll(function() {
+		    if ( $(this).scrollTop() > 300 ){
+			$('#BackTop').fadeIn(222);
+		    } else {
+			$('#BackTop').stop().fadeOut(222);
+		    }
+	        }).scroll();
+            });
+        </script>
         <div class="nav" data-aos="fade-down" 
         data-aos-offset="500"
         data-aos-delay="120" 
         data-aos-duration="2000">
             <ul class="drop-down-menu">
-                <li><a href="ABOUT.html">ABOUT</a></li>
+                <li><a href="">ABOUT</a></li>
                 <li><a href="MENU.html">MENU</a>
                     <ul>
                         <li><a href="COFFEE.html">咖啡</a></li>
                         <li><a href="DESSERT.html">甜點</a></li>
-                        <li><a href="sandwitch.jpg">鹹食</a></li>
+                        <li><a href="">鹹食</a></li>
                     </ul>
                 </li>
                 <li><a href="CONTACT.html">CONTACT</a></li>
@@ -38,54 +56,80 @@
             <h1 data-aos="fade-down" 
             data-aos-offset="500"
             data-aos-delay="80" 
-            data-aos-duration="2000">TUNA COFFE</h1>
+            data-aos-duration="2000">TUNA CAFE
+            </h1>
         </div>
         <!-- 下滑頁面-1 -->
-        <div class="main-1" data-aos="fade-up" 
-        data-aos-offset="500"
-        data-aos-delay="20" 
-        data-aos-duration="2000">
-            <div class="box-1" ></div>
-            <div class="content-1">
-                <h1>舒適的環境</h1>
-                <p>不管是店內的布置還是店鋪四周</p>
-                <p>我們栽種了多種類的盆景植物</p>
-                <p>鮮嫩的綠葉.艷麗的鮮花</p>
-                <p>映入眼裡的美景搭配上一杯香醇的咖啡</p>
-                <p>讓來店的客人身心靈都得到至高的放鬆</p>
-                <a class="button" href="#">我們在哪裡</a>
+        <div class="main-1">
+            <div data-aos="fade-up" 
+            data-aos-offset="500"
+            data-aos-delay="20" 
+            data-aos-duration="2000"class="box-1" ></div>
+            <div data-aos="fade-down" 
+            data-aos-offset="500"
+            data-aos-delay="20" 
+            data-aos-duration="2000"class="content-1">
+                <div data-aos="fade-down" 
+                data-aos-offset="500"
+                data-aos-delay="20" 
+                data-aos-duration="2000" class="content-1-2">
+                    <h1>舒適的環境</h1>
+                    <p>不管是店內的布置還是店鋪四周</p>
+                    <p>我們栽種了多種類的盆景植物</p>
+                    <p>鮮嫩的綠葉.艷麗的鮮花</p>
+                    <p>映入眼裡的美景搭配上一杯香醇的咖啡</p>
+                    <p>讓來店的客人身心靈都得到至高的放鬆</p>
+                    <a class="button" href="CONTACT.html">我們在哪裡</a>
+                </div>
             </div>
         </div>
         <!-- 下滑頁面-2 -->
-        <div class="main-2" data-aos="fade-up" 
-        data-aos-offset="500"
-        data-aos-delay="20" 
-        data-aos-duration="2000">
-            <div class="content-2">
-                <h1>精選的咖啡</h1>
-                <p>本店使用的咖啡豆</p>
-                <p>採用精選的阿拉比卡種咖啡豆</p>
-                <p>甘醇高雅的香味</p>
-                <p>果實酸甜的韻味</p>
-                <p>入喉回甘的風味</p>
-                <p>每一口都不禁讓人細細品味</p>
-                <a class="button" href="MENU.html">MENU</a>
+        <div class="main-2">
+            <div data-aos="fade-up" 
+            data-aos-offset="500"
+            data-aos-delay="20" 
+            data-aos-duration="2000"class="content-2">
+                <div data-aos="fade-down" 
+                data-aos-offset="500"
+                data-aos-delay="20" 
+                data-aos-duration="2000" class="content-2-2">
+                    <h1>精選的咖啡</h1>
+                    <p>本店使用的咖啡豆</p>
+                    <p>採用精選的阿拉比卡種咖啡豆</p>
+                    <p>甘醇高雅的香味</p>
+                    <p>果實酸甜的韻味</p>
+                    <p>入喉回甘的風味</p>
+                    <p>每一口都不禁讓人細細品味</p>
+                    <a class="button" href="MENU.html">MENU</a>
+                </div>
             </div>
-            <div class="box-2"></div>
+            <div data-aos="fade-down" 
+            data-aos-offset="500"
+            data-aos-delay="20" 
+            data-aos-duration="2000"class="box-2">
+            </div>
         </div>
         <!-- 下滑頁面-3 -->
-        <div class="main-3" data-aos="fade-up" 
-        data-aos-offset="500"
-        data-aos-delay="20" 
-        data-aos-duration="2000">
-            <div class="box-3"></div>
-            <div class="content-3">
-                <h1>美味的食物</h1>
-                <p>精心烘烤的蛋糕</p>
-                <p>用料紮實的三明治</p>
-                <p>都是我們師傅職人靈魂的展現</p>
-                <p>每一份都讓人垂涎三尺</p>
-                <a class="button" href="MENU.html">MENU</a>
+        <div class="main-3" >
+            <div data-aos="fade-up" 
+            data-aos-offset="500"
+            data-aos-delay="20" 
+            data-aos-duration="2000" class="box-3"></div>
+            <div data-aos="fade-down" 
+            data-aos-offset="500"
+            data-aos-delay="20" 
+            data-aos-duration="2000" class="content-3">
+                <div data-aos="fade-down" 
+                data-aos-offset="500"
+                data-aos-delay="20" 
+                data-aos-duration="2000" class="content-3-2">
+                    <h1>美味的食物</h1>
+                    <p>精心烘烤的蛋糕</p>
+                    <p>用料紮實的三明治</p>
+                    <p>都是我們師傅職人靈魂的展現</p>
+                    <p>每一份都讓人垂涎三尺</p>
+                    <a class="button" href="MENU.html">MENU</a>
+                </div>
             </div>
         </div>
         <!-- 頁尾 -->
