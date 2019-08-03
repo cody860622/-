@@ -228,6 +228,7 @@ p {
     margin: 0px 0px;
     background-image: url(sandwitch.jpg);
     background-size: cover;
+    position: center;
 }
 .content-3 {
     background-image: url(dessert.jpg);
@@ -539,7 +540,7 @@ p{
         display: grid;
         grid-template-columns: 100%;
     }
-    
+
 
 
 
